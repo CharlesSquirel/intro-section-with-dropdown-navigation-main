@@ -18,6 +18,15 @@ a {
   cursor: pointer;
 }
 
+.hamburger {
+  display: none;
+}
+
+.logo {
+  width: 83.5px;
+  height: 26.58px;
+}
+
 body {
   font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
