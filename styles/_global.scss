@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+$white: #fff;
+$black: #000;
+$almost-white: hsl(0, 0%, 98%);
+$gray: hsl(0, 0%, 41%);
+$almost-black: hsl(0, 0%, 8%);
+$mobile: 460px;
