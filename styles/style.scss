@@ -1,6 +1,10 @@
 @import "_global.scss";
 @import "_header.scss";
+@import "_navs.scss";
 @import "_main.scss";
 body {
+  display: flex;
+  flex-direction: column;
+  gap: 67px;
   font-size: 18px;
 }

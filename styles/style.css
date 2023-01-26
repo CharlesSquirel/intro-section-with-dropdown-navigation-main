@@ -20,8 +20,49 @@ li {
   cursor: pointer;
 }
 
-.hamburger {
-  display: none;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 40px 0 40px;
+}
+
+.logo-nav-container {
+  display: flex;
+  gap: 60px;
+}
+
+.desktop-login-register-container {
+  display: flex;
+  gap: 40px;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #686868;
+}
+
+.btn-login {
+  border: none;
+  background: transparent;
+}
+.btn-login:hover {
+  color: #151515;
+}
+
+.btn-register {
+  width: 104px;
+  height: 42px;
+  background: transparent;
+  border: 1.5px solid #686868;
+  border-radius: 14px;
+}
+.btn-register:hover {
+  color: #151515;
+  border: 1.5px solid #151515;
 }
 
 .logo {
@@ -29,6 +70,28 @@ li {
   height: 26.58px;
 }
 
+.nav-desktop__link--dropdown-featuers-links,
+.nav-desktop__link--dropdown-company-links {
+  display: none;
+}
+
+.nav-desktop__links {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  gap: 67px;
   font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

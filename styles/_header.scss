@@ -1,7 +1,43 @@
-// IMG AND ICONS
-
-.hamburger {
-  display: none;
+// CONTAINERS
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 40px 0 40px;
+}
+.logo-nav-container {
+  display: flex;
+  gap: 60px;
+}
+.desktop-login-register-container {
+  display: flex;
+  gap: 40px;
+}
+// BTNS
+.btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $gray;
+}
+.btn-login {
+  border: none;
+  background: transparent;
+  &:hover {
+    color: $almost-black;
+  }
+}
+.btn-register {
+  width: 104px;
+  height: 42px;
+  background: transparent;
+  border: 1.5px solid $gray;
+  border-radius: 14px;
+  &:hover {
+    color: $almost-black;
+    border: 1.5px solid $almost-black;
+  }
 }
 
 .logo {
