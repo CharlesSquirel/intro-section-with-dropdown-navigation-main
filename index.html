@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,14 +12,45 @@
     <script src="https://kit.fontawesome.com/aacfed8f05.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header-container">
       <div class="logo-nav-container">
         <img class="logo" src="images/logo.svg" alt="Logo" />
+        <!-- NAV DESKTOP -->
+        <nav class="nav-desktop">
+          <ul class="nav-desktop__links">
+            <li class="nav-desktop__link"><a href="#">Features <span class="fa-solid fa-angle-down" aria-hidden="true"></span></a></li>
+            <li class="nav-desktop__link"><a href="#">Company <span class="fa-solid fa-angle-down" aria-hidden="true"></span></a></li>
+            <li class="nav-desktop__link"><a href="#">Careers</a></li>
+            <li class="nav-desktop__link"><a href="#">About</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="login-register-container"></div>
+      <div class="login-register-container">
+        <button class="btn btn-login">Login</button>
+        <button class="btn btn-register">Register</button>
+      </div>
+      <!-- HAMBURGER -->
       <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
     </header>
-    Features Company Careers About Login Register Make remote work Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar. Learn more
+    <main class="main-container">
+      <section class="main-container__section-box">
+        <h1 class="main-container__title">Make remote work</h1>
+        <p class="main-container__paragraph">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="btn btn-learn-more">Learn more</button>
+        <div class="partners-container">
+          <img src="images/client-databiz.svg" alt="Databiz logo">
+          <img src="images/client-audiophile.svg" alt="Audiophile logo">
+          <img src="images/client-meet.svg" alt="Meet logo">
+          <img src="images/client-maker.svg" alt="Maker logo">
+        </div>
+      </section>
+      <picture>
+        <source srcset="images/image-hero-mobile.png" media="(max-width: 460px)">
+        <img src="images/image-hero-desktop.png" alt="Man looking at laptop">
+      </picture>
+    </main>
+            
     <script src="script.js"></script>
   </body>
 </html>
