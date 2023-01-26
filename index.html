@@ -19,38 +19,99 @@
         <!-- NAV DESKTOP -->
         <nav class="nav-desktop">
           <ul class="nav-desktop__links">
-            <li class="nav-desktop__link"><a href="#">Features <span class="fa-solid fa-angle-down" aria-hidden="true"></span></a></li>
-            <li class="nav-desktop__link"><a href="#">Company <span class="fa-solid fa-angle-down" aria-hidden="true"></span></a></li>
+            <li class="nav-desktop__link">Features <span class="fa-solid fa-angle-down" aria-hidden="true"></span>
+              <ul class="nav-desktop__link--dropdown-featuers-links">
+                <li class="nav-desktop__link--dropdown-featuers-link">
+                  <img src="images/icon-todo.svg" alt="Todo icon" /><a href="#">Todo List</a>
+                </li>
+                <li class="nav-desktop__link--dropdown-featuers-link">
+                  <img src="images/icon-calendar.svg" alt="Calendar icon" /><a href="#">Calendar</a>
+                </li>
+                <li class="nav-desktop__link--dropdown-featuers-link">
+                  <img src="images/icon-reminders.svg" alt="Reminder icon" /><a href="#">Reminders</a>
+                </li>
+                <li class="nav-desktop__link--dropdown-featuers-link">
+                  <img src="images/icon-planning.svg" alt="Planning icon" /><a href="#">Planning</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-desktop__link">Company <span class="fa-solid fa-angle-down" aria-hidden="true"></span>
+              <ul class="nav-desktop__link--dropdown-company-links">
+                <li class="nav-desktop__link--dropdown-company-link"><a href="#">History</a></li>
+                <li class="nav-desktop__link--dropdown-company-link"><a href="#">Our Team</a></li>
+                <li class="nav-desktop__link--dropdown-company-link"><a href="#">Blog</a></li>
+              </ul>
+            </li>
             <li class="nav-desktop__link"><a href="#">Careers</a></li>
             <li class="nav-desktop__link"><a href="#">About</a></li>
           </ul>
         </nav>
+        <nav class="nav-mobile">
+          <span class="fa-solid fa-xmark close-icon" title="Close mobile navigation"></span>
+          <div class="nav-mobile__links-container">
+            <ul class="nav-mobile__links">
+              <li class="nav-mobile__link">
+                Features <span class="fa-solid fa-angle-down" aria-hidden="true"></span>
+                <ul class="nav-mobile__link--dropdown-featuers-links">
+                  <li class="nav-mobile__link--dropdown-featuers-link">
+                    <img src="images/icon-todo.svg" alt="Todo icon" /><a href="#">Todo List</a>
+                  </li>
+                  <li class="nav-mobile__link--dropdown-featuers-link">
+                    <img src="images/icon-calendar.svg" alt="Calendar icon" /><a href="#">Calendar</a>
+                  </li>
+                  <li class="nav-mobile__link--dropdown-featuers-link">
+                    <img src="images/icon-reminders.svg" alt="Reminder icon" /><a href="#">Reminders</a>
+                  </li>
+                  <li class="nav-mobile__link--dropdown-featuers-link">
+                    <img src="images/icon-planning.svg" alt="Planning icon" /><a href="#">Planning</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-mobile__link">
+                Company <span class="fa-solid fa-angle-down" aria-hidden="true"></span>
+                <ul class="nav-mobile__link--dropdown-company-links">
+                  <li class="nav-mobile__link--dropdown-company-link"><a href="#">History</a></li>
+                  <li class="nav-mobile__link--dropdown-company-link"><a href="#">Our Team</a></li>
+                  <li class="nav-mobile__link--dropdown-company-link"><a href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li class="nav-mobile__link"><a href="#">Careers</a></li>
+              <li class="nav-mobile__link"><a href="#">About</a></li>
+            </ul>
+            <div class="mobile-login-register-container">
+              <button class="btn btn-login">Login</button>
+              <button class="btn btn-register">Register</button>
+            </div>
+          </div>
+        </nav>
       </div>
-      <div class="login-register-container">
+      <div class="dekstop-login-register-container">
         <button class="btn btn-login">Login</button>
         <button class="btn btn-register">Register</button>
       </div>
       <!-- HAMBURGER -->
-      <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
+      <span class="fa-solid fa-bars hamburger" title="Open mobile navigation"></span>
     </header>
     <main class="main-container">
       <section class="main-container__section-box">
         <h1 class="main-container__title">Make remote work</h1>
-        <p class="main-container__paragraph">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <p class="main-container__paragraph">
+          Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+        </p>
         <button class="btn btn-learn-more">Learn more</button>
         <div class="partners-container">
-          <img src="images/client-databiz.svg" alt="Databiz logo">
-          <img src="images/client-audiophile.svg" alt="Audiophile logo">
-          <img src="images/client-meet.svg" alt="Meet logo">
-          <img src="images/client-maker.svg" alt="Maker logo">
+          <img src="images/client-databiz.svg" alt="Databiz logo" />
+          <img src="images/client-audiophile.svg" alt="Audiophile logo" />
+          <img src="images/client-meet.svg" alt="Meet logo" />
+          <img src="images/client-maker.svg" alt="Maker logo" />
         </div>
       </section>
       <picture>
-        <source srcset="images/image-hero-mobile.png" media="(max-width: 460px)">
-        <img src="images/image-hero-desktop.png" alt="Man looking at laptop">
+        <source srcset="images/image-hero-mobile.png" media="(max-width: 460px)" />
+        <img src="images/image-hero-desktop.png" alt="Man looking at laptop" />
       </picture>
     </main>
-            
+
     <script src="script.js"></script>
   </body>
 </html>
