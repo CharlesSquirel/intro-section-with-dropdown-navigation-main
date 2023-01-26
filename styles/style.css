@@ -30,6 +30,7 @@ li {
 
 .logo-nav-container {
   display: flex;
+  align-items: center;
   gap: 60px;
 }
 
@@ -80,6 +81,11 @@ li {
   align-items: flex-end;
   gap: 40px;
 }
+.nav-desktop__links, .nav-desktop__links a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
 
 .nav-mobile {
   display: none;
@@ -89,9 +95,19 @@ li {
   display: none;
 }
 
+.main-container {
+  display: flex;
+}
+
+#main-img {
+  width: 480px;
+  height: 640px;
+}
+
 body {
   display: flex;
   flex-direction: column;
   gap: 67px;
   font-size: 18px;
+  color: #686868;
 }/*# sourceMappingURL=style.css.map */
