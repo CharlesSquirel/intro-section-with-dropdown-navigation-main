@@ -71,6 +71,12 @@ li {
   height: 26.58px;
 }
 
+@media (max-width: 460px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
 .nav-desktop__link--dropdown-featuers-links,
 .nav-desktop__link--dropdown-company-links {
   display: none;
@@ -93,15 +99,123 @@ li {
 
 #hamburger {
   display: none;
+  font-size: 36px;
+  color: #000;
+}
+@media (max-width: 460px) {
+  #hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 460px) {
+  .desktop-login-register-container {
+    display: none;
+  }
 }
 
 .main-container {
   display: flex;
+  gap: 125px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.main-container__title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -1.11111px;
+  color: #151515;
+}
+@media (max-width: 460px) {
+  .main-container__title {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+  }
+}
+.main-container__paragraph {
+  font-weight: 500;
+  line-height: 28px;
+}
+@media (max-width: 460px) {
+  .main-container__paragraph {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 460px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
 }
 
 #main-img {
   width: 480px;
   height: 640px;
+}
+@media (max-width: 460px) {
+  #main-img {
+    width: 375px;
+    height: 281.25px;
+  }
+}
+
+.btn-learn-more {
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  background-color: #151515;
+  width: 163px;
+  height: 56px;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-learn-more:hover {
+  border: 1px solid #151515;
+  background-color: transparent;
+  color: #000;
+}
+
+.partners-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.main-container__section-box {
+  display: flex;
+  flex-direction: column;
+  gap: 108px;
+  width: 540px;
+}
+
+.main-container__article-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#databiz-logo {
+  width: 113px;
+  height: 20px;
+}
+
+#audiophile-logo {
+  width: 73px;
+  height: 35.9px;
+}
+
+#meet-logo {
+  width: 89.31px;
+  height: 20px;
+}
+
+#maker-logo {
+  width: 82.01px;
+  height: 24px;
 }
 
 body {

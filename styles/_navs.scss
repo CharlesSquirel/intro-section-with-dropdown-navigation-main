@@ -1,4 +1,10 @@
 // NAV DESKTOP
+.nav-desktop{
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
 .nav-desktop__link--dropdown-featuers-links,
 .nav-desktop__link--dropdown-company-links {
   display: none;
@@ -23,4 +29,15 @@
 
 #hamburger {
   display: none;
+  font-size: 36px;
+  color: $black;
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.desktop-login-register-container {
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }

@@ -19,11 +19,10 @@
         <!-- NAV DESKTOP -->
         <nav class="nav-desktop">
           <ul class="nav-desktop__links">
-            <li class="nav-desktop__link">Features <span class="fa-solid fa-angle-down" aria-hidden="true"></span>
+            <li class="nav-desktop__link">
+              Features <span class="fa-solid fa-angle-down" aria-hidden="true"></span>
               <ul class="nav-desktop__link--dropdown-featuers-links">
-                <li class="nav-desktop__link--dropdown-featuers-link">
-                  <img src="images/icon-todo.svg" alt="Todo icon" /><a href="#">Todo List</a>
-                </li>
+                <li class="nav-desktop__link--dropdown-featuers-link"><img src="images/icon-todo.svg" alt="Todo icon" /><a href="#">Todo List</a></li>
                 <li class="nav-desktop__link--dropdown-featuers-link">
                   <img src="images/icon-calendar.svg" alt="Calendar icon" /><a href="#">Calendar</a>
                 </li>
@@ -35,7 +34,8 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-desktop__link">Company <span class="fa-solid fa-angle-down" aria-hidden="true"></span>
+            <li class="nav-desktop__link">
+              Company <span class="fa-solid fa-angle-down" aria-hidden="true"></span>
               <ul class="nav-desktop__link--dropdown-company-links">
                 <li class="nav-desktop__link--dropdown-company-link"><a href="#">History</a></li>
                 <li class="nav-desktop__link--dropdown-company-link"><a href="#">Our Team</a></li>
@@ -94,22 +94,25 @@
       <!-- HAMBURGER -->
       <span id="hamburger" class="fa-solid fa-bars" title="Open mobile navigation"></span>
     </header>
+    <!-- MAIN -->
     <main class="main-container">
       <section class="main-container__section-box">
-        <h1 class="main-container__title">Make remote work</h1>
-        <p class="main-container__paragraph">
-          Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
-        </p>
-        <button class="btn btn-learn-more">Learn more</button>
+        <article class="main-container__article-text">
+          <h1 class="main-container__title">Make remote work</h1>
+          <p class="main-container__paragraph">
+            Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn btn-learn-more">Learn more</button>
+        </article>
         <div class="partners-container">
-          <img src="images/client-databiz.svg" alt="Databiz logo" />
-          <img src="images/client-audiophile.svg" alt="Audiophile logo" />
-          <img src="images/client-meet.svg" alt="Meet logo" />
-          <img src="images/client-maker.svg" alt="Maker logo" />
+          <img id="databiz-logo" src="images/client-databiz.svg" alt="Databiz logo" />
+          <img id="audiophile-logo" src="images/client-audiophile.svg" alt="Audiophile logo" />
+          <img id="meet-logo" src="images/client-meet.svg" alt="Meet logo" />
+          <img id="maker-logo" src="images/client-maker.svg" alt="Maker logo" />
         </div>
       </section>
       <picture>
-        <source srcset="images/image-hero-mobile.png" media="(max-width: 460px)"/>
+        <source srcset="images/image-hero-mobile.png" media="(max-width: 460px)" />
         <img id="main-img" src="images/image-hero-desktop.png" alt="Man looking at laptop" />
       </picture>
     </main>
